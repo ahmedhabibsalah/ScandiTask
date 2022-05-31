@@ -14,7 +14,6 @@ import {
   ProductPrice,
   ProductTitle,
 } from "../../globalstyles/Styles";
-import { AiOutlineClose } from "react-icons/ai";
 import { addCart, delCart } from "../../redux/action";
 
 const Cart = () => {
@@ -42,18 +41,6 @@ const Cart = () => {
       <>
         <FilledCartContainer>
           <FilledCartWrapper>
-            <AiOutlineClose
-              style={{
-                right: "30px",
-                position: "absolute",
-                fontSize: "2rem",
-                cursor: "pointer",
-                border: "1px solid #000",
-                borderradius: "30px",
-              }}
-              onClick={() => handleDel(product)}
-            />
-
             <CartItemWrapper>
               <ImageContainer>
                 <ProductCartImage src={product.image} alt={product.title} />
